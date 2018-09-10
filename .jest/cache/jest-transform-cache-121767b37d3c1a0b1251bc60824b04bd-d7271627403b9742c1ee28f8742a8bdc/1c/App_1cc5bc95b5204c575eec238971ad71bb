@@ -1,0 +1,87 @@
+50f61b9f0643360f79516ef6c201131d
+"use strict";
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+var __extends = this && this.__extends || function () {
+  var extendStatics = function (d, b) {
+    extendStatics = Object.setPrototypeOf || {
+      __proto__: []
+    } instanceof Array && function (d, b) {
+      d.__proto__ = b;
+    } || function (d, b) {
+      for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    };
+
+    return extendStatics(d, b);
+  };
+
+  return function (d, b) {
+    extendStatics(d, b);
+
+    function __() {
+      this.constructor = d;
+    }
+
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+  };
+}();
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  result["default"] = mod;
+  return result;
+};
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importStar(require("react")); //import { AppStore } from '@common/event/store/app.store';
+
+
+var app_store_1 = require("./modules/common/event/store/app.store");
+/* Redux */
+
+
+var react_redux_1 = require("react-redux");
+/** Components */
+
+
+var main_component_1 = __importDefault(require("./src/main/main.component"));
+/** Register Services */
+
+
+var App =
+/** @class */
+function (_super) {
+  __extends(App, _super);
+
+  function App() {
+    return _super !== null && _super.apply(this, arguments) || this;
+  }
+
+  App.prototype.componentDidMount = function () {};
+
+  App.prototype.render = function () {
+    return react_1.default.createElement(react_redux_1.Provider, {
+      store: app_store_1.AppStore
+    }, react_1.default.createElement(main_component_1.default, null));
+  };
+
+  return App;
+}(react_1.Component);
+
+exports.default = App; //# sourceMappingURL=App.js.map
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFNQSxJQUFBLE9BQUEsR0FBQSxZQUFBLENBQUEsT0FBQSxDQUFBLE9BQUEsQ0FBQSxDQUFBLEMsQ0FJQTs7O0FBQ0EsSUFBQSxXQUFBLEdBQUEsT0FBQSxDQUFBLHdDQUFBLENBQUE7QUFFQTs7O0FBQ0EsSUFBQSxhQUFBLEdBQUEsT0FBQSxDQUFBLGFBQUEsQ0FBQTtBQUVBOzs7QUFDQSxJQUFBLGdCQUFBLEdBQUEsZUFBQSxDQUFBLE9BQUEsQ0FBQSwyQkFBQSxDQUFBLENBQUE7QUFFQTs7O0FBR0EsSUFBQSxHQUFBO0FBQUE7QUFBQSxVQUFBLE1BQUEsRUFBQTtBQUFpQyxFQUFBLFNBQUEsQ0FBQSxHQUFBLEVBQUEsTUFBQSxDQUFBOztBQUFqQyxXQUFBLEdBQUEsR0FBQTs7QUFXQzs7QUFUQyxFQUFBLEdBQUEsQ0FBQSxTQUFBLENBQUEsaUJBQUEsR0FBQSxZQUFBLENBQXVCLENBQXZCOztBQUVBLEVBQUEsR0FBQSxDQUFBLFNBQUEsQ0FBQSxNQUFBLEdBQUEsWUFBQTtBQUNFLFdBQ0UsT0FBQSxDQUFBLE9BQUEsQ0FBQSxhQUFBLENBQUMsYUFBQSxDQUFBLFFBQUQsRUFBUztBQUFDLE1BQUEsS0FBSyxFQUFFLFdBQUEsQ0FBQTtBQUFSLEtBQVQsRUFDSSxPQUFBLENBQUEsT0FBQSxDQUFBLGFBQUEsQ0FBQyxnQkFBQSxDQUFBLE9BQUQsRUFBYyxJQUFkLENBREosQ0FERjtBQUtELEdBTkQ7O0FBT0YsU0FBQSxHQUFBO0FBQUMsQ0FYRCxDQUFpQyxPQUFBLENBQUEsU0FBakMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogU2FtcGxlIFJlYWN0IE5hdGl2ZSBBcHBcbiAqIGh0dHBzOi8vZ2l0aHViLmNvbS9mYWNlYm9vay9yZWFjdC1uYXRpdmVcbiAqIEBmbG93XG4gKi9cblxuaW1wb3J0IFJlYWN0LCB7IENvbXBvbmVudCB9IGZyb20gJ3JlYWN0JztcblxuLyogQ29tbW9uICovXG5pbXBvcnQgeyBQcm9wcyB9IGZyb20gJ0Bjb21tb24vY29tcG9uZW50L2NvbW1vbi5wcm9wcyc7XG4vL2ltcG9ydCB7IEFwcFN0b3JlIH0gZnJvbSAnQGNvbW1vbi9ldmVudC9zdG9yZS9hcHAuc3RvcmUnO1xuaW1wb3J0IHsgQXBwU3RvcmUgfSBmcm9tICcuL21vZHVsZXMvY29tbW9uL2V2ZW50L3N0b3JlL2FwcC5zdG9yZSc7XG5cbi8qIFJlZHV4ICovXG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gJ3JlYWN0LXJlZHV4JztcblxuLyoqIENvbXBvbmVudHMgKi9cbmltcG9ydCAgTWFpbkNvbXBvbmVudCBmcm9tICcuL3NyYy9tYWluL21haW4uY29tcG9uZW50JztcblxuLyoqIFJlZ2lzdGVyIFNlcnZpY2VzICovXG5cblxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgQXBwIGV4dGVuZHMgQ29tcG9uZW50PFByb3BzPiB7XG5cbiAgY29tcG9uZW50RGlkTW91bnQgKCkge31cblxuICByZW5kZXIoKSB7XG4gICAgcmV0dXJuIChcbiAgICAgIDxQcm92aWRlciBzdG9yZT17QXBwU3RvcmV9PlxuICAgICAgICAgIDxNYWluQ29tcG9uZW50IC8+XG4gICAgICA8L1Byb3ZpZGVyPlxuICAgICk7XG4gIH1cbn1cblxuIl0sInNvdXJjZVJvb3QiOiIifQ==

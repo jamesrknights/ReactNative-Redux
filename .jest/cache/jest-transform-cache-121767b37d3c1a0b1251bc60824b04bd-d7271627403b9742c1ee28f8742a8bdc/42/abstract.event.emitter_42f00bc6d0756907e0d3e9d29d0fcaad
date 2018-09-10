@@ -1,0 +1,23 @@
+1822be498984b90c298863e441f6ad23
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var app_store_1 = require("../store/app.store");
+
+var AbstractEventEmitter =
+/** @class */
+function () {
+  function AbstractEventEmitter() {}
+
+  AbstractEventEmitter.prototype.dispatchEvent = function (action) {
+    app_store_1.AppStore.dispatch(action);
+  };
+
+  return AbstractEventEmitter;
+}();
+
+exports.AbstractEventEmitter = AbstractEventEmitter; //# sourceMappingURL=abstract.event.emitter.js.map
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFic3RyYWN0LmV2ZW50LmVtaXR0ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsSUFBQSxXQUFBLEdBQUEsT0FBQSxDQUFBLG9CQUFBLENBQUE7O0FBRUEsSUFBQSxvQkFBQTtBQUFBO0FBQUEsWUFBQTtBQUFBLFdBQUEsb0JBQUEsR0FBQSxDQU1DOztBQUpHLEVBQUEsb0JBQUEsQ0FBQSxTQUFBLENBQUEsYUFBQSxHQUFBLFVBQWUsTUFBZixFQUEyQjtBQUN2QixJQUFBLFdBQUEsQ0FBQSxRQUFBLENBQVMsUUFBVCxDQUFrQixNQUFsQjtBQUNILEdBRkQ7O0FBSUosU0FBQSxvQkFBQTtBQUFDLENBTkQsRUFBQTs7QUFBYSxPQUFBLENBQUEsb0JBQUEsR0FBQSxvQkFBQSxDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQXBwU3RvcmUgfSBmcm9tICcuLi9zdG9yZS9hcHAuc3RvcmUnO1xyXG5cclxuZXhwb3J0IGNsYXNzIEFic3RyYWN0RXZlbnRFbWl0dGVyIHtcclxuXHJcbiAgICBkaXNwYXRjaEV2ZW50IChhY3Rpb24gOiBhbnkpIHtcclxuICAgICAgICBBcHBTdG9yZS5kaXNwYXRjaChhY3Rpb24pO1xyXG4gICAgfVxyXG5cclxufSJdLCJzb3VyY2VSb290IjoiIn0=
